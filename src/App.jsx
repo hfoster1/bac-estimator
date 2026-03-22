@@ -436,7 +436,7 @@ async function fetchOFF(query) {
   const url =
     `https://world.openfoodfacts.org/api/v2/search?search_terms=${encodeURIComponent(key)}` +
     `&categories_tags=alcoholic-beverages` +
-    `&fields=product_name,nutriments,categories_tags&page_size=40`;
+    `&fields=product_name,nutriments,categories_tags&page_size=1000`;
   console.log("[BAC] Fetching OFF:", url);
   const res = await fetch(url);
   if (!res.ok) throw new Error(`OFF ${res.status}`);

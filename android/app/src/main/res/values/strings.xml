@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">BAC Estimator</string>
+    <string name="title_activity_main">BAC Estimator</string>
+    <string name="package_name">com.hfoster1.bacestimator</string>
+    <string name="custom_url_scheme">com.hfoster1.bacestimator</string>
+</resources>

@@ -1,17 +1,30 @@
-# React + Vite
+# BAC Estimator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live site:** https://hfoster1.github.io/bac-estimator/
 
-Currently, two official plugins are available:
+A browser-based Blood Alcohol Content (BAC) estimator built with React. Enter your weight, sex, and the drinks you've consumed (with start times) to get a real-time estimate of your BAC over time, including a chart showing how it rises and falls.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Large drink database covering beers, wines, ciders, spirits, RTDs, and more — including many Australian and international brands
+- Searchable drink picker with ABV and serve-size details
+- BAC calculated using the Widmark formula, accounting for weight, sex, and elapsed time
+- Interactive area chart showing your BAC curve over the session
+- Reference lines for the Australian legal driving limit (0.05) and general impairment threshold (0.08)
+- Runs entirely in the browser — no data is sent anywhere
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech
 
-## Expanding the ESLint configuration
+- React 19 + Vite
+- Recharts for the BAC chart
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# bac-estimator" 
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Disclaimer
+
+This tool provides estimates only. Actual BAC varies based on many individual factors. Never rely on a BAC estimator to make decisions about driving or operating machinery.
